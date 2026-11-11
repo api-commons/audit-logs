@@ -1,0 +1,20 @@
+provider: knoxcall
+apis_io: https://apis.io/providers/knoxcall/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-logs
+    - events
+    properties:
+      action: action
+      id: id
+      created_at: created_at
+      ip_address: ip_address
+      metadata: details
+      target_id: resource_id
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/knoxcall-openapi.json#GET /audit-logs
+    - openapi/_original/knoxcall-openapi.json#GET /audit-logs/events

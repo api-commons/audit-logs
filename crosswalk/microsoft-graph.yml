@@ -1,0 +1,20 @@
+provider: microsoft-graph
+apis_io: https://apis.io/providers/microsoft-graph/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditevents
+    - auditlogs
+    properties:
+      action: activity
+      id: id
+      actor_id: actor
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/auditlogs-openapi-original.yml#GET /auditLogs
+    - openapi/_original/auditlogs-openapi-original.yml#PATCH /auditLogs
+    - openapi/_original/devicemanagement-openapi-original.yml#DELETE /deviceManagement/auditEvents/{auditEvent-id}
+    - openapi/_original/devicemanagement-openapi-original.yml#DELETE /deviceManagement/virtualEndpoint/auditEvents/{cloudPcAuditEvent-id}
+    - openapi/_original/devicemanagement-openapi-original.yml#GET /deviceManagement/auditEvents

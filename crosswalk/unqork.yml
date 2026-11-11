@@ -1,0 +1,12 @@
+provider: unqork
+apis_io: https://apis.io/providers/unqork/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-logs
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/unqork-customer-api-openapi.yml#GET /logs/audit-logs

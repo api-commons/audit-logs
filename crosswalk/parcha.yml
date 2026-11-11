@@ -1,0 +1,14 @@
+provider: parcha
+apis_io: https://apis.io/providers/parcha/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-log
+    properties:
+      action: event_type
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/parcha-openapi-original.json#GET /admin/billing/audit-log

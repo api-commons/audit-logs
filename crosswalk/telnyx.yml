@@ -1,0 +1,17 @@
+provider: telnyx
+apis_io: https://apis.io/providers/telnyx/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit_events
+    properties:
+      id: id
+      created_at: created_at
+      actor_id: user_id
+      target_id: resource_id
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/telnyx-openapi.json#GET /audit_events
+    - openapi/_original/telnyx-openapi.yml#GET /audit_events

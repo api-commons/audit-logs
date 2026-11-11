@@ -1,0 +1,16 @@
+provider: credoai
+apis_io: https://apis.io/providers/credoai/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit_logs
+    properties:
+      action: type
+      id: id
+      metadata: attributes
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/credoai-openapi.json#GET /audit_logs
+    - openapi/_original/credoai-openapi.json#GET /audit_logs/{id}

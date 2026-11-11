@@ -1,0 +1,19 @@
+provider: microsoft-intune
+apis_io: https://apis.io/providers/microsoft-intune/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditevents
+    properties:
+      action: activity
+      id: id
+      actor_id: actor
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/microsoft-intune-openapi.yml#DELETE /deviceManagement/auditEvents/{auditEvent-id}
+    - openapi/_original/microsoft-intune-openapi.yml#DELETE /deviceManagement/virtualEndpoint/auditEvents/{cloudPcAuditEvent-id}
+    - openapi/_original/microsoft-intune-openapi.yml#GET /deviceManagement/auditEvents
+    - openapi/_original/microsoft-intune-openapi.yml#GET /deviceManagement/auditEvents/{auditEvent-id}
+    - openapi/_original/microsoft-intune-openapi.yml#GET /deviceManagement/virtualEndpoint/auditEvents

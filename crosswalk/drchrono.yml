@@ -1,0 +1,19 @@
+provider: drchrono
+apis_io: https://apis.io/providers/drchrono/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit_log
+    properties:
+      action:
+      - action
+      - type
+      created_at: created_at
+      actor_id: user_id
+      ip_address: ip_address
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/drchrono-rest-api-openapi-schema.json#GET /api/audit_log
+    - openapi/_original/drchrono-rest-api-openapi.yml#GET /api/audit_log

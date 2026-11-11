@@ -1,0 +1,64 @@
+openapi: 3.1.0
+info:
+  title: Audit Logs (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Audit Logs interface, distilled from the harvested OpenAPI of 844 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /audit-events:
+    get:
+      operationId: listAuditEvents
+      summary: List audit events
+      tags:
+      - Audit Events
+      x-commons-tier: core
+      x-commons-share: 0.902
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/AuditEvent'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /audit-events/{audit_event_id}:
+    parameters:
+    - $ref: '#/components/parameters/audit_event_id'
+    get:
+      operationId: getAuditEvent
+      summary: Get an audit event
+      tags:
+      - Audit Events
+      x-commons-tier: extended
+      x-commons-share: 0.23
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+components:
+  schemas:
+    AuditEvent:
+      $ref: ./schema/audit_event.json
+  parameters:
+    audit_event_id:
+      name: audit_event_id
+      in: path
+      required: true
+      schema:
+        type: string

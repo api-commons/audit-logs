@@ -1,0 +1,12 @@
+provider: comp-ai
+apis_io: https://apis.io/providers/comp-ai/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-logs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/comp-ai-openapi.json#GET /v1/audit-logs

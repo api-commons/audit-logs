@@ -1,0 +1,13 @@
+provider: sonatype
+apis_io: https://apis.io/providers/sonatype/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditlogs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/sonatype-iq-openapi.yml#GET /api/v2/auditLogs
+    - openapi/_original/sonatype-lifecycle-openapi.yml#GET /api/v2/auditLogs

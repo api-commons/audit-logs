@@ -1,0 +1,21 @@
+provider: circle
+apis_io: https://apis.io/providers/circle/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditlogs
+    properties:
+      action: type
+      id: id
+      created_at: occurredAt
+      actor_id: actorId
+      ip_address: clientIp
+      target_id:
+      - targetId
+      - entityId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/circle-openapi.yml#GET /v1/auditLogs
+    - openapi/_original/circle-openapi.yml#GET /v1/auditLogs/{id}

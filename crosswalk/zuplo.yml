@@ -1,0 +1,18 @@
+provider: zuplo
+apis_io: https://apis.io/providers/zuplo/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-logs
+    properties:
+      action: action
+      created_at: timestamp
+      actor_id: actor
+      metadata:
+      - metadata
+      - context
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/zuplo-openapi.yml#GET /v1/accounts/{accountName}/audit-logs

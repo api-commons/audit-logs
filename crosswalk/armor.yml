@@ -1,0 +1,18 @@
+provider: armor
+apis_io: https://apis.io/providers/armor/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - activity-logs
+    properties:
+      action: event
+      id: id
+      created_at: createdDate
+      actor_id:
+      - userId
+      - createdBy
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/armor-v1-infrastructure-swagger-original.json#GET /backup/activity-logs

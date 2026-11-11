@@ -1,0 +1,15 @@
+provider: cisco-secure-firewall
+apis_io: https://apis.io/providers/cisco-secure-firewall/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditlogs
+    properties:
+      action: eventType
+      created_at: eventTime
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cisco-secure-firewall-scc-firewall-manager-openapi.yml#GET /v1/auditlogs
+    - openapi/_original/scc-firewall-manager-openapi.yaml#GET /v1/auditlogs

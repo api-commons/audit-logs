@@ -1,0 +1,16 @@
+provider: device42
+apis_io: https://apis.io/providers/device42/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditlogs
+    properties:
+      action: action
+      actor_id: user
+      target_id: object_id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/device42-openapi.yaml#DELETE /api/1.0/auditlogs/
+    - openapi/_original/device42-openapi.yaml#GET /api/1.0/auditlogs/

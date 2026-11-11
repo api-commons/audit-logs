@@ -1,0 +1,16 @@
+provider: abnormal
+apis_io: https://apis.io/providers/abnormal/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditlogs
+    properties:
+      action: action
+      created_at: timestamp
+      actor_id: user
+      ip_address: sourceIp
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/abnormal-client-api-openapi-original.yml#GET /auditlogs

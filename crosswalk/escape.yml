@@ -1,0 +1,17 @@
+provider: escape
+apis_io: https://apis.io/providers/escape/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - logs
+    properties:
+      action: action
+      id: id
+      actor_id:
+      - actor
+      - actorEmail
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/escape-openapi.yml#GET /audit/logs

@@ -1,0 +1,18 @@
+provider: saperly
+apis_io: https://apis.io/providers/saperly/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-events
+    properties:
+      action: eventType
+      id: id
+      created_at: createdAt
+      actor_id: actor
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/api-saperly-com-openapi.json#GET /workspaces/{slug}/audit-events
+    - openapi/_original/saperly-com-openapi-bundled.json#GET /workspaces/{slug}/audit-events
+    - openapi/_original/saperly-openapi.yml#GET /workspaces/{slug}/audit-events

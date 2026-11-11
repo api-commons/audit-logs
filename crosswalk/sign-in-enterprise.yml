@@ -1,0 +1,13 @@
+provider: sign-in-enterprise
+apis_io: https://apis.io/providers/sign-in-enterprise/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit_logs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/sign-in-enterprise-guest-api-openapi-original.yml#GET /audit_logs
+    - openapi/_original/sign-in-enterprise-guest-api-openapi-original.yml#GET /audit_logs/{audit_log_id}

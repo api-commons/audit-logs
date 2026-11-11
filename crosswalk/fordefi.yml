@@ -1,0 +1,18 @@
+provider: fordefi
+apis_io: https://apis.io/providers/fordefi/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-log
+    properties:
+      action: action
+      id: id
+      created_at: timestamp
+      actor_id: created_by
+      ip_address: client_ip
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/fordefi-openapi-original.json#GET /api/v1/audit-log
+    - openapi/_original/fordefi-openapi-original.json#POST /api/v1/webhooks/trigger/audit-log/{id}

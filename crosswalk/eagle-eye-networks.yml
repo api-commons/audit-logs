@@ -1,0 +1,17 @@
+provider: eagle-eye-networks
+apis_io: https://apis.io/providers/eagle-eye-networks/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditlogs
+    properties:
+      id: id
+      created_at: timestamp
+      actor_id: userId
+      ip_address: ipAddress
+      target_id: targetId
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/eagle-eye-networks-user-accounts-openapi.yml#GET /auditLogs

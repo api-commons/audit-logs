@@ -1,0 +1,17 @@
+provider: aembit
+apis_io: https://apis.io/providers/aembit/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-logs
+    properties:
+      action: activity
+      created_at: createdAt
+      actor_id: actor
+      target_id: target
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/aembit-cloud-openapi-original.yml#GET /api/v1/audit-logs
+    - openapi/_original/aembit-cloud-openapi-original.yml#GET /api/v1/audit-logs/{id}

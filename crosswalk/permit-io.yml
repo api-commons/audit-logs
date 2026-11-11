@@ -1,0 +1,20 @@
+provider: permit-io
+apis_io: https://apis.io/providers/permit-io/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit_logs
+    properties:
+      action: action
+      id: id
+      created_at:
+      - timestamp
+      - created_at
+      metadata: context
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/permit-io-openapi.json#GET /v2/elements/{proj_id}/{env_id}/config/{elements_config_id}/data/audit_logs
+    - openapi/_original/permit-io-openapi.json#GET /v2/pdps/{proj_id}/{env_id}/audit_logs
+    - openapi/_original/permit-io-openapi.json#GET /v2/pdps/{proj_id}/{env_id}/audit_logs/{log_id}

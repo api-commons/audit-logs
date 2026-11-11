@@ -1,0 +1,19 @@
+provider: credo-ai
+apis_io: https://apis.io/providers/credo-ai/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit_logs
+    properties:
+      action: type
+      id: id
+      metadata: attributes
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/credo-ai-audit-logs-shadow-ai-openapi.json#GET /audit_logs
+    - openapi/_original/credo-ai-audit-logs-shadow-ai-openapi.json#GET /audit_logs/{id}
+    - openapi/_original/credo-ai-integration-openapi.json#GET /audit_logs
+    - openapi/_original/credo-ai-integration-openapi.json#GET /audit_logs/{id}
+    - openapi/_original/credo-ai-openapi.json#GET /use_cases/{use_case_id}/{policy_pack_key}/audit_logs

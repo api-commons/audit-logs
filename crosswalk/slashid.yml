@@ -1,0 +1,15 @@
+provider: slashid
+apis_io: https://apis.io/providers/slashid/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-logs
+    properties:
+      id: audit_id
+      created_at: created_at
+      metadata: metadata
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/slashid-api-openapi.yml#GET /super-admins/audit-logs

@@ -1,0 +1,12 @@
+provider: appomni
+apis_io: https://apis.io/providers/appomni/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditlogs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/appomni-discovery-insights-api-openapi.yml#GET /api/v1/core/auditlogs/

@@ -1,0 +1,17 @@
+provider: hanko
+apis_io: https://apis.io/providers/hanko/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit_logs
+    properties:
+      action: type
+      id: id
+      created_at: created_at
+      actor_id: actor_email
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/hanko-admin-api-openapi.yml#GET /audit_logs
+    - openapi/_original/hanko-passkey-api-openapi.yml#GET /{tenant_id}/audit_logs

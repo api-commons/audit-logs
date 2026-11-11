@@ -1,0 +1,13 @@
+provider: sweep
+apis_io: https://apis.io/providers/sweep/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-trail
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/sweep-api-openapi.yml#GET /ai-retrievers/audit-trail
+    - openapi/_original/sweep-openapi.json#GET /ai-retrievers/audit-trail

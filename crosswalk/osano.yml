@@ -1,0 +1,18 @@
+provider: osano
+apis_io: https://apis.io/providers/osano/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-log
+    properties:
+      action: eventType
+      id: id
+      created_at: timestamp
+      actor_id: actor
+      metadata: metadata
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/osano-customer-rest-api-openapi.yml#GET /v1/cookie-consent/audit-log
+    - openapi/_original/osano-customer-rest-api.yaml#GET /v1/cookie-consent/audit-log

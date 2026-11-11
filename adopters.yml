@@ -1,0 +1,308 @@
+context: audit-logs
+generated: '2026-11-11'
+adopters:
+- provider: 1password
+  apis_io: https://apis.io/providers/1password/
+  crosswalk: crosswalk/1password.yml
+  concepts:
+  - audit_event
+- provider: abnormal
+  apis_io: https://apis.io/providers/abnormal/
+  crosswalk: crosswalk/abnormal.yml
+  concepts:
+  - audit_event
+- provider: accept
+  apis_io: https://apis.io/providers/accept/
+  crosswalk: crosswalk/accept.yml
+  concepts:
+  - audit_event
+- provider: adaptive-security
+  apis_io: https://apis.io/providers/adaptive-security/
+  crosswalk: crosswalk/adaptive-security.yml
+  concepts:
+  - audit_event
+- provider: aembit
+  apis_io: https://apis.io/providers/aembit/
+  crosswalk: crosswalk/aembit.yml
+  concepts:
+  - audit_event
+- provider: agoragentic-com
+  apis_io: https://apis.io/providers/agoragentic-com/
+  crosswalk: crosswalk/agoragentic-com.yml
+  concepts:
+  - audit_event
+- provider: amperity
+  apis_io: https://apis.io/providers/amperity/
+  crosswalk: crosswalk/amperity.yml
+  concepts:
+  - audit_event
+- provider: appomni
+  apis_io: https://apis.io/providers/appomni/
+  crosswalk: crosswalk/appomni.yml
+  concepts:
+  - audit_event
+- provider: armor
+  apis_io: https://apis.io/providers/armor/
+  crosswalk: crosswalk/armor.yml
+  concepts:
+  - audit_event
+- provider: blindinsight
+  apis_io: https://apis.io/providers/blindinsight/
+  crosswalk: crosswalk/blindinsight.yml
+  concepts:
+  - audit_event
+- provider: chaitin
+  apis_io: https://apis.io/providers/chaitin/
+  crosswalk: crosswalk/chaitin.yml
+  concepts:
+  - audit_event
+- provider: circle
+  apis_io: https://apis.io/providers/circle/
+  crosswalk: crosswalk/circle.yml
+  concepts:
+  - audit_event
+- provider: cisco-secure-firewall
+  apis_io: https://apis.io/providers/cisco-secure-firewall/
+  crosswalk: crosswalk/cisco-secure-firewall.yml
+  concepts:
+  - audit_event
+- provider: cloudflare
+  apis_io: https://apis.io/providers/cloudflare/
+  crosswalk: crosswalk/cloudflare.yml
+  concepts:
+  - audit_event
+- provider: comp-ai
+  apis_io: https://apis.io/providers/comp-ai/
+  crosswalk: crosswalk/comp-ai.yml
+  concepts:
+  - audit_event
+- provider: conga
+  apis_io: https://apis.io/providers/conga/
+  crosswalk: crosswalk/conga.yml
+  concepts:
+  - audit_event
+- provider: controlup
+  apis_io: https://apis.io/providers/controlup/
+  crosswalk: crosswalk/controlup.yml
+  concepts:
+  - audit_event
+- provider: corestack
+  apis_io: https://apis.io/providers/corestack/
+  crosswalk: crosswalk/corestack.yml
+  concepts:
+  - audit_event
+- provider: credo-ai
+  apis_io: https://apis.io/providers/credo-ai/
+  crosswalk: crosswalk/credo-ai.yml
+  concepts:
+  - audit_event
+- provider: credoai
+  apis_io: https://apis.io/providers/credoai/
+  crosswalk: crosswalk/credoai.yml
+  concepts:
+  - audit_event
+- provider: device42
+  apis_io: https://apis.io/providers/device42/
+  crosswalk: crosswalk/device42.yml
+  concepts:
+  - audit_event
+- provider: drchrono
+  apis_io: https://apis.io/providers/drchrono/
+  crosswalk: crosswalk/drchrono.yml
+  concepts:
+  - audit_event
+- provider: eagle-eye-networks
+  apis_io: https://apis.io/providers/eagle-eye-networks/
+  crosswalk: crosswalk/eagle-eye-networks.yml
+  concepts:
+  - audit_event
+- provider: escape
+  apis_io: https://apis.io/providers/escape/
+  crosswalk: crosswalk/escape.yml
+  concepts:
+  - audit_event
+- provider: fenergo
+  apis_io: https://apis.io/providers/fenergo/
+  crosswalk: crosswalk/fenergo.yml
+  concepts:
+  - audit_event
+- provider: fordefi
+  apis_io: https://apis.io/providers/fordefi/
+  crosswalk: crosswalk/fordefi.yml
+  concepts:
+  - audit_event
+- provider: fusionauth
+  apis_io: https://apis.io/providers/fusionauth/
+  crosswalk: crosswalk/fusionauth.yml
+  concepts:
+  - audit_event
+- provider: greenhelix-net
+  apis_io: https://apis.io/providers/greenhelix-net/
+  crosswalk: crosswalk/greenhelix-net.yml
+  concepts:
+  - audit_event
+- provider: hanko
+  apis_io: https://apis.io/providers/hanko/
+  crosswalk: crosswalk/hanko.yml
+  concepts:
+  - audit_event
+- provider: infisical
+  apis_io: https://apis.io/providers/infisical/
+  crosswalk: crosswalk/infisical.yml
+  concepts:
+  - audit_event
+- provider: kaseya
+  apis_io: https://apis.io/providers/kaseya/
+  crosswalk: crosswalk/kaseya.yml
+  concepts:
+  - audit_event
+- provider: knoxcall
+  apis_io: https://apis.io/providers/knoxcall/
+  crosswalk: crosswalk/knoxcall.yml
+  concepts:
+  - audit_event
+- provider: kolide
+  apis_io: https://apis.io/providers/kolide/
+  crosswalk: crosswalk/kolide.yml
+  concepts:
+  - audit_event
+- provider: leaflink
+  apis_io: https://apis.io/providers/leaflink/
+  crosswalk: crosswalk/leaflink.yml
+  concepts:
+  - audit_event
+- provider: lever-co
+  apis_io: https://apis.io/providers/lever-co/
+  crosswalk: crosswalk/lever-co.yml
+  concepts:
+  - audit_event
+- provider: logz-io
+  apis_io: https://apis.io/providers/logz-io/
+  crosswalk: crosswalk/logz-io.yml
+  concepts:
+  - audit_event
+- provider: lseg
+  apis_io: https://apis.io/providers/lseg/
+  crosswalk: crosswalk/lseg.yml
+  concepts:
+  - audit_event
+- provider: microsoft-graph
+  apis_io: https://apis.io/providers/microsoft-graph/
+  crosswalk: crosswalk/microsoft-graph.yml
+  concepts:
+  - audit_event
+- provider: microsoft-intune
+  apis_io: https://apis.io/providers/microsoft-intune/
+  crosswalk: crosswalk/microsoft-intune.yml
+  concepts:
+  - audit_event
+- provider: onetrust
+  apis_io: https://apis.io/providers/onetrust/
+  crosswalk: crosswalk/onetrust.yml
+  concepts:
+  - audit_event
+- provider: osano
+  apis_io: https://apis.io/providers/osano/
+  crosswalk: crosswalk/osano.yml
+  concepts:
+  - audit_event
+- provider: parcha
+  apis_io: https://apis.io/providers/parcha/
+  crosswalk: crosswalk/parcha.yml
+  concepts:
+  - audit_event
+- provider: permit-io
+  apis_io: https://apis.io/providers/permit-io/
+  crosswalk: crosswalk/permit-io.yml
+  concepts:
+  - audit_event
+- provider: plerion
+  apis_io: https://apis.io/providers/plerion/
+  crosswalk: crosswalk/plerion.yml
+  concepts:
+  - audit_event
+- provider: portkey
+  apis_io: https://apis.io/providers/portkey/
+  crosswalk: crosswalk/portkey.yml
+  concepts:
+  - audit_event
+- provider: postman
+  apis_io: https://apis.io/providers/postman/
+  crosswalk: crosswalk/postman.yml
+  concepts:
+  - audit_event
+- provider: projectdiscovery
+  apis_io: https://apis.io/providers/projectdiscovery/
+  crosswalk: crosswalk/projectdiscovery.yml
+  concepts:
+  - audit_event
+- provider: saperly
+  apis_io: https://apis.io/providers/saperly/
+  crosswalk: crosswalk/saperly.yml
+  concepts:
+  - audit_event
+- provider: secureauth
+  apis_io: https://apis.io/providers/secureauth/
+  crosswalk: crosswalk/secureauth.yml
+  concepts:
+  - audit_event
+- provider: sign-in-enterprise
+  apis_io: https://apis.io/providers/sign-in-enterprise/
+  crosswalk: crosswalk/sign-in-enterprise.yml
+  concepts:
+  - audit_event
+- provider: signicat
+  apis_io: https://apis.io/providers/signicat/
+  crosswalk: crosswalk/signicat.yml
+  concepts:
+  - audit_event
+- provider: slashid
+  apis_io: https://apis.io/providers/slashid/
+  crosswalk: crosswalk/slashid.yml
+  concepts:
+  - audit_event
+- provider: socket
+  apis_io: https://apis.io/providers/socket/
+  crosswalk: crosswalk/socket.yml
+  concepts:
+  - audit_event
+- provider: sonatype
+  apis_io: https://apis.io/providers/sonatype/
+  crosswalk: crosswalk/sonatype.yml
+  concepts:
+  - audit_event
+- provider: sweep
+  apis_io: https://apis.io/providers/sweep/
+  crosswalk: crosswalk/sweep.yml
+  concepts:
+  - audit_event
+- provider: telnyx
+  apis_io: https://apis.io/providers/telnyx/
+  crosswalk: crosswalk/telnyx.yml
+  concepts:
+  - audit_event
+- provider: unqork
+  apis_io: https://apis.io/providers/unqork/
+  crosswalk: crosswalk/unqork.yml
+  concepts:
+  - audit_event
+- provider: workday-security
+  apis_io: https://apis.io/providers/workday-security/
+  crosswalk: crosswalk/workday-security.yml
+  concepts:
+  - audit_event
+- provider: workera
+  apis_io: https://apis.io/providers/workera/
+  crosswalk: crosswalk/workera.yml
+  concepts:
+  - audit_event
+- provider: workos
+  apis_io: https://apis.io/providers/workos/
+  crosswalk: crosswalk/workos.yml
+  concepts:
+  - audit_event
+- provider: zuplo
+  apis_io: https://apis.io/providers/zuplo/
+  crosswalk: crosswalk/zuplo.yml
+  concepts:
+  - audit_event

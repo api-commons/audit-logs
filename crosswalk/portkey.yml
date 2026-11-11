@@ -1,0 +1,18 @@
+provider: portkey
+apis_io: https://apis.io/providers/portkey/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-logs
+    properties:
+      action:
+      - method
+      - action
+      created_at: timestamp
+      actor_id: user_id
+      ip_address: client_ip
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/portkey-openapi.yml#GET /audit-logs

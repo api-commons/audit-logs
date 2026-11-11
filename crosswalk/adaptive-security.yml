@@ -1,0 +1,17 @@
+provider: adaptive-security
+apis_io: https://apis.io/providers/adaptive-security/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-logs
+    properties:
+      action: action
+      id: id
+      created_at: occurred_at
+      actor_id: actor
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/adaptive-security-openapi.json#GET /v2/audit-logs
+    - openapi/_original/adaptive-security-openapi.json#GET /v2/audit-logs/{auditLogId}

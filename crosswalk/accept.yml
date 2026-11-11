@@ -1,0 +1,16 @@
+provider: accept
+apis_io: https://apis.io/providers/accept/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-events
+    properties:
+      action: event_type
+      id: id
+      created_at: occurred_at
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/accept-midas-openapi-original.yml#GET /v1/evidence/audit-events
+    - openapi/_original/accept-midas-openapi-original.yml#GET /v1/evidence/envelopes/{id}/audit-events

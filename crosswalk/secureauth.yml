@@ -1,0 +1,20 @@
+provider: secureauth
+apis_io: https://apis.io/providers/secureauth/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-events
+    properties:
+      action: action
+      id: event_id
+      created_at: timestamp
+      metadata:
+      - context
+      - metadata
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/secureauth-admin-openapi.yml#GET /servers/{wid}/audit-events
+    - openapi/_original/secureauth-root-openapi.yml#POST /api/system/audit-events
+    - openapi/_original/secureauth-system-openapi.yml#GET /servers/{wid}/audit-events

@@ -1,0 +1,19 @@
+provider: lseg
+apis_io: https://apis.io/providers/lseg/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditevents
+    properties:
+      action: actionType
+      id: id
+      metadata: details
+      target_id: objectId
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/lseg-world-check-one-openapi-original.yml#GET /cases/{caseSystemId}/auditEvents/{auditEventId}
+    - openapi/_original/lseg-world-check-one-openapi-original.yml#POST /cases/{caseSystemId}/auditEvents
+    - openapi/_original/lseg-world-check-one-openapi-original.yml#GET /cases/{caseSystemId}/auditEvents/{auditEventId}
+    - openapi/_original/lseg-world-check-one-openapi-original.yml#POST /cases/{caseSystemId}/auditEvents

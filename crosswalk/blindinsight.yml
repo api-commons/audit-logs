@@ -1,0 +1,20 @@
+provider: blindinsight
+apis_io: https://apis.io/providers/blindinsight/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-logs
+    properties:
+      action: action
+      id: id
+      created_at: timestamp
+      actor_id:
+      - actor_email
+      - actor
+      ip_address: remote_addr
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/blindinsight-openapi-original.yml#GET /api/organizations/{organization_id}/audit-logs/
+    - openapi/_original/blindinsight-openapi-original.yml#GET /api/organizations/{organization_id}/audit-logs/{id}/

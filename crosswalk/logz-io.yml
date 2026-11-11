@@ -1,0 +1,15 @@
+provider: logz-io
+apis_io: https://apis.io/providers/logz-io/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-trail
+    - events
+    properties:
+      ip_address: ip
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/logz-io-api-openapi.yml#POST /v1/audit-trail
+    - openapi/_original/logz-io-api-openapi.yml#PUT /v2/security/rules/events/{ruleId}

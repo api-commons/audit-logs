@@ -1,0 +1,12 @@
+provider: corestack
+apis_io: https://apis.io/providers/corestack/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditlog
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/corestack-external-api-openapi-original.json#POST /v2/audit/auditlog/batch

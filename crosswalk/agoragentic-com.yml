@@ -1,0 +1,12 @@
+provider: agoragentic-com
+apis_io: https://apis.io/providers/agoragentic-com/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - logs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/agoragentic-com-openapi.json#GET /audit/logs

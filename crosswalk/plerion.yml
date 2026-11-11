@@ -1,0 +1,15 @@
+provider: plerion
+apis_io: https://apis.io/providers/plerion/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-logs
+    properties:
+      action: operation
+      id: id
+      ip_address: ip
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/plerion-openapi-original.yml#GET /v1/tenant/audit-logs

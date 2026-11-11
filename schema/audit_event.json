@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/audit-logs/main/schema/audit_event.json",
+  "title": "Audit Event",
+  "description": "The common audit_event in Audit Logs, distilled from 53 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "action": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.755,
+      "x-commons-providers": 40,
+      "x-commons-spellings": [
+        "action",
+        "type",
+        "eventType",
+        "activity",
+        "event_type",
+        "event",
+        "method",
+        "Action"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.679,
+      "x-commons-providers": 36,
+      "x-commons-spellings": [
+        "id",
+        "event_id",
+        "uuid",
+        "Id",
+        "audit_id"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.623,
+      "x-commons-providers": 33,
+      "x-commons-spellings": [
+        "timestamp",
+        "created_at",
+        "createdAt",
+        "occurred_at",
+        "published",
+        "createdDate",
+        "occurredAt",
+        "eventTime"
+      ],
+      "format": "date-time"
+    },
+    "actor_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.528,
+      "x-commons-providers": 28,
+      "x-commons-spellings": [
+        "actor",
+        "user",
+        "user_id",
+        "userId",
+        "actor_email",
+        "createdBy",
+        "actorId",
+        "actorEmail"
+      ]
+    },
+    "ip_address": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.321,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "ip",
+        "ip_address",
+        "ipAddress",
+        "client_ip",
+        "sourceIp",
+        "remote_addr",
+        "clientIp"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.245,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "metadata",
+        "details",
+        "context",
+        "attributes",
+        "Details"
+      ]
+    },
+    "target_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.208,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "target",
+        "object_id",
+        "targetId",
+        "resource_id",
+        "entityId",
+        "resource",
+        "objectId"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "audit-logs",
+    "concept": "audit_event",
+    "providers": 53,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

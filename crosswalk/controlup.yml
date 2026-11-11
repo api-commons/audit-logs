@@ -1,0 +1,18 @@
+provider: controlup
+apis_io: https://apis.io/providers/controlup/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-log
+    properties:
+      action:
+      - activity
+      - type
+      created_at: time
+      ip_address: ip
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/controlup-dex-platform-openapi.yml#GET /organizations/{orgId}/audit-log
+    - openapi/_original/dex.json#GET /organizations/{orgId}/audit-log

@@ -1,0 +1,12 @@
+provider: onetrust
+apis_io: https://apis.io/providers/onetrust/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - activities
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/onetrust-platform-access-management-openapi.json#GET /api/audit/v1/users/{userId}/activities

@@ -1,0 +1,13 @@
+provider: leaflink
+apis_io: https://apis.io/providers/leaflink/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit_log
+    properties:
+      created_at: created_on
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/leaflink-api-openapi-original.yml#GET /products/{id}/audit_log

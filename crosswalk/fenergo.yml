@@ -1,0 +1,12 @@
+provider: fenergo
+apis_io: https://apis.io/providers/fenergo/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-events
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/fenergo-auditquery-v3-0-openapi.json#POST /api/v3/entity/{entityId}/{fieldName}/audit-events

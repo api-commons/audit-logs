@@ -1,0 +1,22 @@
+provider: cloudflare
+apis_io: https://apis.io/providers/cloudflare/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit_logs
+    - audit-log
+    properties:
+      action: action
+      id: id
+      actor_id: actor
+      metadata: metadata
+      target_id: resource
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/audit_logs
+    - openapi/_original/cloudflare-openapi-original.yml#GET /accounts/{account_id}/audit_logs
+    - openapi/_original/cloudflare-openapi-original.yml#GET /organizations/{organization_id}/audit_logs
+    - openapi/_original/cloudflare-openapi-original.yml#GET /user/audit_logs
+    - openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/audit_logs

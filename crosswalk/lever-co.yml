@@ -1,0 +1,12 @@
+provider: lever-co
+apis_io: https://apis.io/providers/lever-co/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit_events
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/lever-data-api-openapi.yml#GET /audit_events

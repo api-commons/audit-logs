@@ -1,0 +1,20 @@
+provider: workday-security
+apis_io: https://apis.io/providers/workday-security/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - auditlogs
+    properties:
+      action:
+      - eventType
+      - action
+      id: id
+      actor_id: actor
+      ip_address: ipAddress
+      target_id: target
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/workday-security-audit-openapi.yml#GET /auditLogs
+    - openapi/_original/workday-security-audit-openapi.yml#GET /auditLogs/{auditLogId}

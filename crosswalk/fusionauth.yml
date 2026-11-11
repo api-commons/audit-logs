@@ -1,0 +1,14 @@
+provider: fusionauth
+apis_io: https://apis.io/providers/fusionauth/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-log
+    properties:
+      id: id
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/fusionauth-openapi.yaml#GET /api/system/audit-log/{auditLogId}
+    - openapi/_original/fusionauth-openapi.yaml#POST /api/system/audit-log

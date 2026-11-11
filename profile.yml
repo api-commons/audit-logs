@@ -1,0 +1,227 @@
+context: audit-logs
+name: Audit Logs
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Compliance
+  - Security
+  - Identity
+  - Authentication
+  - Governance
+  - Audit
+  - Audit Logging
+  - SIEM
+  - Enterprise Software
+  providers_with_harvested_openapi: 844
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  bureau-of-industry-security:
+  - bureau-of-industry-and-security
+  conductorone:
+  - c1
+  oracle-health:
+  - cerner
+  cvent:
+  - cvent-hospitality-cloud
+  - cvent-registration
+  ethena:
+  - goethena
+  lseg:
+  - london-stock-exchange-group
+  moodys:
+  - moodys-corporation
+  viso-trust:
+  - viso-trust-protecht
+shared_specs: {}
+concepts:
+  audit_event:
+    segments_seen:
+      audit-logs: 11
+      auditlogs: 10
+      audit-log: 9
+      audit_logs: 7
+      audit-events: 5
+      auditevents: 4
+      logs: 4
+      audit_log: 4
+      events: 3
+      audit_events: 3
+      activity-logs: 2
+      audit-trail: 2
+      audittrail: 1
+      auditlog: 1
+      activities: 1
+    providers_exposing: 61
+    providers_with_readable_schema: 53
+    operations:
+    - operation: GET collection
+      providers: 55
+      share: 0.902
+      tier: core
+    - operation: GET item
+      providers: 14
+      share: 0.23
+      tier: extended
+    - operation: POST collection
+      providers: 10
+      share: 0.164
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 3
+      share: 0.049
+      tier: long-tail
+    - operation: DELETE item
+      providers: 2
+      share: 0.033
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.016
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.016
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.016
+      tier: long-tail
+    properties:
+    - name: action
+      tier: core
+      providers: 40
+      share: 0.755
+      type: string
+      spellings:
+      - action
+      - type
+      - eventType
+      - activity
+      - event_type
+      - event
+      - method
+      - Action
+    - name: id
+      tier: core
+      providers: 36
+      share: 0.679
+      type: string
+      spellings:
+      - id
+      - event_id
+      - uuid
+      - Id
+      - audit_id
+    - name: created_at
+      tier: core
+      providers: 33
+      share: 0.623
+      type: string
+      spellings:
+      - timestamp
+      - created_at
+      - createdAt
+      - occurred_at
+      - published
+      - createdDate
+      - occurredAt
+      - eventTime
+    - name: actor_id
+      tier: core
+      providers: 28
+      share: 0.528
+      type: string
+      spellings:
+      - actor
+      - user
+      - user_id
+      - userId
+      - actor_email
+      - createdBy
+      - actorId
+      - actorEmail
+    - name: ip_address
+      tier: extended
+      providers: 17
+      share: 0.321
+      type: string
+      spellings:
+      - ip
+      - ip_address
+      - ipAddress
+      - client_ip
+      - sourceIp
+      - remote_addr
+      - clientIp
+    - name: metadata
+      tier: extended
+      providers: 13
+      share: 0.245
+      type: object
+      spellings:
+      - metadata
+      - details
+      - context
+      - attributes
+      - Details
+    - name: target_id
+      tier: extended
+      providers: 11
+      share: 0.208
+      type: string
+      spellings:
+      - target
+      - object_id
+      - targetId
+      - resource_id
+      - entityId
+      - resource
+      - objectId
+    long_tail_count: 273
+    long_tail_sample:
+    - user_agent
+    - outcome
+    - target_type
+    - category
+    - description
+    - request_id
+    - changes
+    - organization_id
+    - source
+    - tenant_id
+    - payload
+    - resources
+    - updated_at
+    - account_id
+    - actor_type
+    - date
+    - location
+    - session_id
+    - user_email
+    - activity_date_time
+    - activity_operation_type
+    - activity_result
+    - activity_type
+    - changed_by
+    - changed_fields
+    - component_name
+    - content
+    - correlation_id
+    - display_name
+    - error
+    - event_description
+    - from
+    - module
+    - odata_type
+    - org_id
+    - organization_name
+    - previous_value
+    - project_id
+    - query
+    - reason

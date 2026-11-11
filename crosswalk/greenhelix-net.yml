@@ -1,0 +1,13 @@
+provider: greenhelix-net
+apis_io: https://apis.io/providers/greenhelix-net/
+context: audit-logs
+generated: '2026-11-11'
+concepts:
+  audit_event:
+    path_segment:
+    - audit-log
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/greenhelix-net-a2a-commerce-gateway-openapi.yml#GET /v1/infra/audit-log
+    - openapi/_original/greenhelix-net-openapi.json#GET /v1/infra/audit-log
